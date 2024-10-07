@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h5 {
+    @apply font-bold;
+  }
+  input,
+  textarea {
+    @apply bg-bg-color border-gray-color;
+  }
+}
+
+@layer components {
+  .icons-container {
+    @apply p-4 aspect-square bg-card-color w-max rounded-full;
+  }
+  .icons {
+    @apply fill-green-color w-10;
+  }
+  .focus-input {
+    @apply outline-none focus:ring-1 focus:ring-green-color focus:ring-inset transition;
+  }
+}
+
+@layer utilities {
+  .clip-circle-0 {
+    clip-path: circle(0% at top right);
+  }
+  .clip-circle-full {
+    clip-path: circle(150% at top right);
+  }
+  .grid-twin {
+    @apply grid-cols-[repeat(auto-fit,minmax(170px,1fr))];
+  }
+}
