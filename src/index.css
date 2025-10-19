@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-color: #27ae60;
+  --color-gray-color: #828282;
+  --color-card-color: #212121;
+  --color-bg-color: #171717;
+  --color-menu-color: #172554;
+  --font-family-lato: "Lato", sans-serif;
+}
