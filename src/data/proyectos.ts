@@ -24,9 +24,16 @@ export const proyectos: Proyecto[] = [
   },
   {
     id: 4,
-    url: "https://rentapartament.netlify.app/",
-    titulo: "RentApartament",
+    url: "https://bienesraices.domcloud.dev/",
+    titulo: "BienesRaíces",
     descripcion:
-      "Es la maquetación de un sitio de arriendos para estudiantes universitarios. Este proyecto fue presentado en una casa abierta a los estudiantes de la Escuela Superior Politécnica de Chimborazo (ESPOCH).",
+      "Es una aplicación que permite publicar y administrar propiedades en venta, realizada con Node.js, Express, MySQL, PUG, JWT, Leaflet y Tailwind. Permite ver cada propiedad y enviar un mensaje al vendedor, filtrar propiedades por su categoría y precio o realizar una búsqueda generalizada. Cuenta con autenticación, panel de administración de propiedades, paginación, etc",
   },
+  // {
+  //   id: 5,
+  //   url: "https://rentapartament.netlify.app/",
+  //   titulo: "RentApartament",
+  //   descripcion:
+  //     "Es la maquetación de un sitio de arriendos para estudiantes universitarios. Este proyecto fue presentado en una casa abierta a los estudiantes de la Escuela Superior Politécnica de Chimborazo (ESPOCH).",
+  // },
 ];
