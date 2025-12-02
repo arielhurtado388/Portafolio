@@ -13,7 +13,7 @@ export const proyectos: Proyecto[] = [
     url: "https://questify.domcloud.dev/",
     titulo: "Questify",
     descripcion:
-      "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador. Este proyecto fue realizado para el GAD parroquial de San Andrés.",
+      "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador. Este proyecto fue realizado para el GAD parroquial de San Andrés. Realizada con PHP, MySQL, SASS, JS, Creación propia del Router, ORM Básico y un mini Framework usando Active Record, POO y PDO.",
   },
   {
     id: 3,
