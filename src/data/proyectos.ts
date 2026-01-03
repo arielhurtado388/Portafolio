@@ -15,22 +15,17 @@ export const proyectos: Proyecto[] = [
     descripcion:
       "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador. Realizada con PHP, MySQL, SASS, JS, Creación propia del Router, ORM Básico y un mini Framework usando Active Record, POO y PDO.",
   },
+
   {
     id: 3,
-    url: "https://devtreeec.netlify.app/",
-    titulo: "DevTree",
+    url: "https://lukin.netlify.app/",
+    titulo: "Lukin",
     descripcion:
-      "Es una aplicación implementada con Mongo, Express, React y Node (MERN) utilizando TypeScript, Tailwind, React Router DOM, Axios, JWT, Mongoose y ReactQuery. Permite tener todos lo enlaces a nuestras redes sociales en un solo lugar, similar a como lo realiza LinkTree.",
+      "Es una aplicación implementada con Next.js (App Router, Server Actions, etc), TypeScript, Tailwind, Express, JWT y PostgreSQL. Permite agregar presupuestos y sus respectivos gastos para tener un control de nuestras finanzas de manera fácil, rápida y minimalista.",
   },
+
   {
     id: 4,
-    url: "https://bebidasec.netlify.app/",
-    titulo: "Bebidas",
-    descripcion:
-      "Es una aplicación implementada con React, TypeScript, Tailwind, ZOD, Zustand, React Router DOM, Axios, Slice Pattern y OpenRouter que permite consultar recetas de bebidas y guardarlas como favoritos. Además, permite la generación de recetas con inteligencia artificial utlizando el modelo de Meta:Llama-3.3-70b.",
-  },
-  {
-    id: 5,
     url: "https://bienesraices.domcloud.dev/",
     titulo: "BienesRaíces",
     descripcion:
