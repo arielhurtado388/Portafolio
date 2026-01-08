@@ -15,11 +15,12 @@ function App() {
           <section className="py-8 text-center" id="about">
             <h2 className="text-4xl md:text-5xl font-bold">Acerca de mí</h2>
             <p className="mt-8 mb-16 leading-normal text-gray-color md:w-4/5 md:mx-auto">
-              Ingeniero de Software Junior especializado en desarrollo web full
-              stack. Experiencia en HTML, CSS, JavaScript, React.js, TypeScript,
-              Node.js, PHP y bases de datos MySQL, PostgreSQL y MongoDB. Manejo
-              TailwindCSS, Docker, Git/GitHub, Linux y n8n. Orientado a buenas
-              prácticas, colaboración y aprendizaje continuo.
+              Ingeniero de Software Junior con experiencia en el desarrollo de
+              aplicaciones web full stack en entornos reales. He participado en
+              proyectos en producción, incluyendo sistemas web empresariales y
+              aplicaciones institucionales, utilizando arquitectura MVC, APIs y
+              bases de datos. Interesado en construir software mantenible,
+              aplicar buenas prácticas y continuar creciendo técnicamente.
             </p>
 
             <div className="grid gap-8 justify-center justify-items-center md:grid-cols-3">
