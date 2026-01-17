@@ -16,14 +16,12 @@ function App() {
             <h2 className="text-4xl md:text-5xl font-bold">Acerca de mí</h2>
             <p className="mt-8 mb-16 leading-normal text-gray-color md:w-4/5 md:mx-auto">
               Ingeniero de Software Full Stack con experiencia en el desarrollo
-              y mantenimiento de aplicaciones web en entornos de producción,
-              tanto en organizaciones institucionales como en plataformas
-              internas de carácter privado. He trabajado en la implementación de
-              APIs, autenticación y automatización de procesos, aportando en
-              nuevas funcionalidades y en la mejora continua de plataformas
-              existentes. Me enfoco en construir soluciones full stack bien
-              integradas, con código limpio y una base técnica sólida, pensada
-              para facilitar su mantenimiento y evolución.
+              y mantenimiento de aplicaciones web en entornos de producción, en
+              organizaciones institucionales y de carácter privado. He trabajado
+              en la implementación de APIs, autenticación y automatización de
+              procesos, aportando nuevas funcionalidades y la mejora continua de
+              sistemas existentes. Construyo soluciones con una base técnica
+              sólida, pensada para facilitar su mantenimiento y evolución.
             </p>
 
             <div className="grid gap-8 justify-center justify-items-center md:grid-cols-3">
