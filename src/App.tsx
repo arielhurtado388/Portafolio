@@ -1,8 +1,9 @@
-import CardAcercaDe from "./components/CardAcercaDe";
+import CardAcerca from "./components/CardAcerca";
 import CardExperiencia from "./components/CardExperiencia";
 import CardHabilidad from "./components/CardHabilidad";
 import CardProyecto from "./components/CardProyecto";
 import Header from "./components/Header";
+import { informacionAcerca } from "./data/acerca";
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
               </p>
             </div>
 
-            <CardAcercaDe />
+            <div className="space-y-4 md:col-span-1">
+              {informacionAcerca.map((informacion) => (
+                <CardAcerca key={informacion.id} informacion={informacion} />
+              ))}
+            </div>
           </div>
         </section>
 
