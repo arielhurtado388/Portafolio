@@ -1,11 +1,11 @@
-import Acerca from "./components/Acerca";
-import CardExperiencia from "./components/CardExperiencia";
-import Proyecto from "./components/Proyecto";
 import Header from "./components/Header";
-import { informacionAcerca } from "./data/acerca";
-import { informacionExperiencia } from "./data/experiencia";
-import { proyectos } from "./data/proyectos";
+import Acerca from "./components/Acerca";
+import Experiencia from "./components/Experiencia";
+import Proyecto from "./components/Proyecto";
 import Habilidad from "./components/Habilidad";
+import { informacionAcerca } from "./data/acerca";
+import { experiencias } from "./data/experiencias";
+import { proyectos } from "./data/proyectos";
 import { habilidades } from "./data/habilidades";
 
 function App() {
@@ -43,8 +43,8 @@ function App() {
 
         <main className="mt-8">
           <h2 className="text-2xl md:text-3xl font-bold">Experiencia</h2>
-          {informacionExperiencia.map((experiencia) => (
-            <CardExperiencia key={experiencia.id} experiencia={experiencia} />
+          {experiencias.map((experiencia) => (
+            <Experiencia key={experiencia.id} experiencia={experiencia} />
           ))}
         </main>
 

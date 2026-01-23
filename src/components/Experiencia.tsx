@@ -1,6 +1,6 @@
 import type { Experiencia } from "../types";
 
-export default function CardExperiencia({
+export default function Experiencia({
   experiencia,
 }: {
   experiencia: Experiencia;
