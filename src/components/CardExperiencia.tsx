@@ -1,10 +1,16 @@
-export default function CardExperiencia() {
+import type { Experiencia } from "../types";
+
+export default function CardExperiencia({
+  experiencia,
+}: {
+  experiencia: Experiencia;
+}) {
   return (
     <div className="relative border border-slate-200 rounded-lg mt-8 p-4 ml-6 before:content-[''] before:absolute before:-left-6 before:top-[2.5rem] before:w-4 before:h-4 before:bg-emerald-500 before:rounded-full before:ring-4 before:ring-white before:z-10 after:content-[''] after:absolute after:-left-[19px] after:top-0 after:h-full after:w-1 after:bg-gray-200 hover:border-emerald-800 transition-all">
       <header className="flex flex-col md:flex-row justify-between gap-4 m-4 md:items-center">
         <div>
           <h3 className="text-lg md:text-xl font-semibold">
-            Desarrollador de Software
+            {experiencia.cargo}
           </h3>
 
           <p className="flex items-center gap-4">
@@ -26,7 +32,7 @@ export default function CardExperiencia() {
               <path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" />
               <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" />
             </svg>
-            Ecuador Domain S.A. - NIC.ec
+            {experiencia.empresa}
           </p>
         </div>
 
@@ -49,21 +55,17 @@ export default function CardExperiencia() {
               <rect width="18" height="18" x="3" y="4" rx="2" />
               <path d="M3 10h18" />
             </svg>
-            Feb 2025 - Ago 2025
+            {experiencia.fecha}
           </h3>
-          <p className="text-sm md:text-right text-slate-500">Presencial</p>
+          <p className="text-sm md:text-right text-slate-500">
+            {experiencia.modalidad}
+          </p>
         </div>
       </header>
       <ul className="list-disc marker:text-emerald-500 px-8 text-sm md:text-base">
-        <li>
-          Desarrollo, mantenimiento y modernización de sistemas web críticos
-          para la gestión de dominios .ec.
-        </li>
-        <li>Implementación de chatbots para atención al cliente.</li>
-        <li>
-          Automatización de flujos operativos y procesos internos utilizando
-          n8n.
-        </li>
+        {experiencia.listado.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
     </div>
   );

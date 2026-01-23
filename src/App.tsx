@@ -4,6 +4,7 @@ import CardHabilidad from "./components/CardHabilidad";
 import CardProyecto from "./components/CardProyecto";
 import Header from "./components/Header";
 import { informacionAcerca } from "./data/acerca";
+import { informacionExperiencia } from "./data/experiencia";
 
 function App() {
   return (
@@ -40,8 +41,9 @@ function App() {
 
         <main className="mt-8">
           <h2 className="text-2xl md:text-3xl font-bold">Experiencia</h2>
-          <CardExperiencia />
-          <CardExperiencia />
+          {informacionExperiencia.map((experiencia, index) => (
+            <CardExperiencia key={experiencia.id} experiencia={experiencia} />
+          ))}
         </main>
 
         <section className="mt-8">
