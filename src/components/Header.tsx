@@ -34,7 +34,10 @@ export default function Header() {
           <div className="flex gap-4">
             <a
               className="bg-gray-100 p-2 rounded-lg hover:bg-emerald-500 hover:text-white transition-all"
-              href="#"
+              href="https://github.com/arielhurtado388"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,7 +57,10 @@ export default function Header() {
             </a>
             <a
               className="bg-gray-100 p-2 rounded-lg hover:bg-emerald-500 hover:text-white transition-all"
-              href="#"
+              href="https://www.linkedin.com/in/ariel-hurtado"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Linkedln"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +81,8 @@ export default function Header() {
             </a>
             <a
               className="bg-gray-100 p-2 rounded-lg hover:bg-emerald-500 hover:text-white transition-all"
-              href="#"
+              href="mailto:arielhurtado388@gmail.com"
+              title="Correo"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,13 +105,16 @@ export default function Header() {
           <div className="flex gap-4">
             <a
               className="py-2 px-4 bg-emerald-500 hover:bg-emerald-700 text-white rounded transition-all"
-              href="#"
+              href="https://api.whatsapp.com/send?phone=593983342969&text=Hola%20Ariel..."
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Contactar
             </a>
             <a
               className="py-2 px-4 rounded border border-slate-200 hover:bg-gray-200 transition-all"
-              href="#"
+              href="/CV - Ariel Hurtado.pdf"
+              download
             >
               Descargar CV
             </a>

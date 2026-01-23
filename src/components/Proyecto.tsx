@@ -30,6 +30,7 @@ export default function Proyecto({ proyecto }: { proyecto: Proyecto }) {
             className="hover:text-emerald-500 transition-all"
             href={proyecto.github}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +54,7 @@ export default function Proyecto({ proyecto }: { proyecto: Proyecto }) {
             className="hover:text-emerald-500 transition-all"
             href={proyecto.app}
             target="_blank"
+            rel="noopener noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
