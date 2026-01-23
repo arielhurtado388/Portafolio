@@ -17,7 +17,7 @@ export const experiencias: Experiencia[] = [
   {
     id: 2,
     cargo: "Desarrollador de Software - Prácticas Profesionales",
-    empresa: "GAD Parroquial San Andrés, Riobamba",
+    empresa: "GAD Parroquial San Andrés",
     fecha: "Ago 2023 - Feb 2024",
     modalidad: "Híbrido",
     listado: [

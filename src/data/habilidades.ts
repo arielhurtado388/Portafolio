@@ -14,7 +14,7 @@ export const habilidades: Habilidad[] = [
       "Responsive Web Design",
       "JavaScript",
       "TypeScript",
-      "React.js",
+      "React",
     ],
   },
 

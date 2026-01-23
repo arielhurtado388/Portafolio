@@ -11,16 +11,16 @@ export default function Header() {
         </a>
         <nav>
           <ul className="flex flex-wrap justify-center md:flex-row gap-4 text-sm md:text-base font-medium">
-            <li>
+            <li className="hover:text-emerald-500">
               <a href="#acerca">Acerca de mí</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-500">
               <a href="#experiencia">Experiencia</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-500">
               <a href="#proyectos">Proyectos</a>
             </li>
-            <li>
+            <li className="hover:text-emerald-500">
               <a href="#habilidades">Habilidades</a>
             </li>
             {/* <li>Contacto</li> */}
@@ -38,7 +38,7 @@ export default function Header() {
             <span className="text-emerald-800 font-bold"> Ariel Hurtado</span>
           </p>
           <h1 className="text-3xl md:text-5xl font-bold">
-            Desarollador Full Stack
+            Desarrollador Full Stack
           </h1>
           <p>Ingeniero de Software | Desarrollador Web | Frontend | Backend</p>
           <div className="flex gap-4">

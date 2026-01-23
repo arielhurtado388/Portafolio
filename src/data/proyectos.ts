@@ -30,7 +30,7 @@ export const proyectos: Proyecto[] = [
     imagen: "questify.webp",
     titulo: "Questify",
     descripcion:
-      "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador.",
+      "Es una aplicación que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador.",
     tags: [
       "PHP",
       "MySQL",
