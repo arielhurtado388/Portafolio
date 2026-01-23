@@ -32,8 +32,8 @@ function App() {
             </div>
 
             <div className="space-y-4 md:col-span-1">
-              {informacionAcerca.map((informacion) => (
-                <CardAcerca key={informacion.id} informacion={informacion} />
+              {informacionAcerca.map((acerca) => (
+                <CardAcerca key={acerca.id} acerca={acerca} />
               ))}
             </div>
           </div>
@@ -41,7 +41,7 @@ function App() {
 
         <main className="mt-8">
           <h2 className="text-2xl md:text-3xl font-bold">Experiencia</h2>
-          {informacionExperiencia.map((experiencia, index) => (
+          {informacionExperiencia.map((experiencia) => (
             <CardExperiencia key={experiencia.id} experiencia={experiencia} />
           ))}
         </main>
