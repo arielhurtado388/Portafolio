@@ -14,7 +14,7 @@ function App() {
       <div className="max-w-[95%] md:max-w-7xl mx-auto">
         <Header />
 
-        <section className="mt-8">
+        <section className="mt-8" id="acerca">
           <h2 className="text-2xl md:text-3xl font-bold text-emerald-800">
             Acerca de mí
           </h2>
@@ -41,21 +41,21 @@ function App() {
           </div>
         </section>
 
-        <main className="mt-8">
+        <main className="mt-8" id="experiencia">
           <h2 className="text-2xl md:text-3xl font-bold">Experiencia</h2>
           {experiencias.map((experiencia) => (
             <Experiencia key={experiencia.id} experiencia={experiencia} />
           ))}
         </main>
 
-        <section className="mt-8">
+        <section className="mt-8" id="proyectos">
           <h2 className="text-2xl md:text-3xl font-bold">Proyectos</h2>
           {proyectos.map((proyecto) => (
             <Proyecto key={proyecto.id} proyecto={proyecto} />
           ))}
         </section>
 
-        <section className="mt-8">
+        <section className="mt-8" id="habilidades">
           <h2 className="text-2xl md:text-3xl font-bold">Habilidades</h2>
           <div className="grid md:grid-cols-2 gap-4 my-8">
             {habilidades.map((habilidad) => (

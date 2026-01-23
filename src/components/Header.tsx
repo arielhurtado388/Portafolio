@@ -2,17 +2,27 @@ export default function Header() {
   return (
     <header>
       <section className="flex flex-col md:flex-row justify-between p-8 items-center gap-4">
-        <img
-          className="w-20 h-20 md:w-24 md:h-24"
-          src="/logo.webp"
-          alt="Logo"
-        />
+        <a href="/">
+          <img
+            className="w-20 h-20 md:w-24 md:h-24"
+            src="/logo.webp"
+            alt="Logo"
+          />
+        </a>
         <nav>
           <ul className="flex flex-col md:flex-row gap-4 text-sm md:text-base font-medium">
-            <li>Acerca de mí</li>
-            <li>Experiencia</li>
-            <li>Proyectos</li>
-            <li>Habilidades</li>
+            <li>
+              <a href="#acerca">Acerca de mí</a>
+            </li>
+            <li>
+              <a href="#experiencia">Experiencia</a>
+            </li>
+            <li>
+              <a href="#proyectos">Proyectos</a>
+            </li>
+            <li>
+              <a href="#habilidades">Habilidades</a>
+            </li>
             {/* <li>Contacto</li> */}
           </ul>
         </nav>
