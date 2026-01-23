@@ -1,9 +1,10 @@
 import type { Proyecto } from "../types";
 
 export default function Proyecto({ proyecto }: { proyecto: Proyecto }) {
+  console.log(proyecto.id % 2 === 0);
   return (
     <article className="grid md:grid-cols-2 my-8 gap-8 border border-slate-200 rounded-lg items-center">
-      <div>
+      <div className={`${proyecto.id % 2 === 0 ? "md:order-2" : ""}`}>
         <img
           className="md:rounded-tl-lg md:rounded-bl-lg rounded-lg md:rounded-none object-contain aspect-video"
           src={`/${proyecto.imagen}`}

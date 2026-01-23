@@ -27,7 +27,7 @@ export const proyectos: Proyecto[] = [
 
   {
     id: 2,
-    imagen: "tandatask.png",
+    imagen: "questify.png",
     titulo: "Questify",
     descripcion:
       "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador.",
@@ -44,5 +44,27 @@ export const proyectos: Proyecto[] = [
     ],
     github: "https://github.com/arielhurtado388/Questify",
     app: "https://questify.domcloud.dev",
+  },
+
+  {
+    id: 3,
+    imagen: "lukin.png",
+    titulo: "Lukin",
+    descripcion:
+      "Es una aplicación que permite agregar presupuestos y sus respectivos gastos para tener un control de nuestras finanzas de manera fácil, rápida y minimalista.",
+    tags: ["Next.js", "TypeScript", "Tailwind", "Express", "JWT", "PostgreSQL"],
+    github: "https://github.com/arielhurtado388/LukinBackend",
+    app: "https://lukin.netlify.app",
+  },
+
+  {
+    id: 4,
+    imagen: "bienesraices.png",
+    titulo: "BienesRaíces",
+    descripcion:
+      "Es una aplicación que permite publicar y administrar propiedades en venta. Permite ver cada propiedad y enviar un mensaje al vendedor, filtrar propiedades por su categoría y precio o realizar una búsqueda generalizada. Cuenta con autenticación, panel de administración de propiedades, paginación, etc",
+    tags: ["Node.js", "Express", "MySQL", "PUG", "JWT", "Leaflet", "Tailwind"],
+    github: "https://github.com/arielhurtado388/BienesRaices",
+    app: "https://bienesraices.domcloud.dev",
   },
 ];
