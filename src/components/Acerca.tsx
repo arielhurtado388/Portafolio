@@ -1,6 +1,6 @@
 import type { Acerca } from "../types";
 
-export default function CardAcerca({ acerca }: { acerca: Acerca }) {
+export default function Acerca({ acerca }: { acerca: Acerca }) {
   return (
     <div className="py-2 px-4 bg-gray-100 rounded">
       <h3 className="font-semibold text-base">{acerca.titulo}</h3>

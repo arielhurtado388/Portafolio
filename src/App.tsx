@@ -1,4 +1,4 @@
-import CardAcerca from "./components/CardAcerca";
+import Acerca from "./components/Acerca";
 import CardExperiencia from "./components/CardExperiencia";
 import Proyecto from "./components/Proyecto";
 import Header from "./components/Header";
@@ -35,7 +35,7 @@ function App() {
 
             <div className="space-y-4 md:col-span-1">
               {informacionAcerca.map((acerca) => (
-                <CardAcerca key={acerca.id} acerca={acerca} />
+                <Acerca key={acerca.id} acerca={acerca} />
               ))}
             </div>
           </div>
