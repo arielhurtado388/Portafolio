@@ -3,7 +3,7 @@ import type { Proyecto } from "../types";
 export const proyectos: Proyecto[] = [
   {
     id: 1,
-    imagen: "tandatask.png",
+    imagen: "tandatask.webp",
     titulo: "TandaTask",
     descripcion:
       "Es una aplicación que permite gestionar proyectos, tareas, notas y colaboradores al más puro estilo de trello.",
@@ -27,7 +27,7 @@ export const proyectos: Proyecto[] = [
 
   {
     id: 2,
-    imagen: "questify.png",
+    imagen: "questify.webp",
     titulo: "Questify",
     descripcion:
       "Es una aplicación web que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador.",
@@ -48,7 +48,7 @@ export const proyectos: Proyecto[] = [
 
   {
     id: 3,
-    imagen: "lukin.png",
+    imagen: "lukin.webp",
     titulo: "Lukin",
     descripcion:
       "Es una aplicación que permite agregar presupuestos y sus respectivos gastos para tener un control de nuestras finanzas de manera fácil, rápida y minimalista.",
@@ -59,7 +59,7 @@ export const proyectos: Proyecto[] = [
 
   {
     id: 4,
-    imagen: "bienesraices.png",
+    imagen: "bienesraices.webp",
     titulo: "BienesRaíces",
     descripcion:
       "Es una aplicación que permite publicar y administrar propiedades en venta. Permite ver cada propiedad y enviar un mensaje al vendedor, filtrar propiedades por su categoría y precio o realizar una búsqueda generalizada. Cuenta con autenticación, panel de administración de propiedades, paginación, etc",
