@@ -13,3 +13,13 @@ export type Experiencia = {
   modalidad: string;
   listado: string[];
 };
+
+export type Proyecto = {
+  id: number;
+  imagen: string;
+  titulo: string;
+  descripcion: string;
+  tags: string[];
+  github: string;
+  app: string;
+};

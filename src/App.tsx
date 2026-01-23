@@ -1,10 +1,11 @@
 import CardAcerca from "./components/CardAcerca";
 import CardExperiencia from "./components/CardExperiencia";
 import CardHabilidad from "./components/CardHabilidad";
-import CardProyecto from "./components/CardProyecto";
+import Proyecto from "./components/Proyecto";
 import Header from "./components/Header";
 import { informacionAcerca } from "./data/acerca";
 import { informacionExperiencia } from "./data/experiencia";
+import { proyectos } from "./data/proyectos";
 
 function App() {
   return (
@@ -48,8 +49,9 @@ function App() {
 
         <section className="mt-8">
           <h2 className="text-2xl md:text-3xl font-bold">Proyectos</h2>
-          <CardProyecto />
-          <CardProyecto />
+          {proyectos.map((proyecto) => (
+            <Proyecto key={proyecto.id} proyecto={proyecto} />
+          ))}
         </section>
 
         <section className="mt-8">

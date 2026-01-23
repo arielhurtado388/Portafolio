@@ -1,39 +1,33 @@
-export default function CardProyecto() {
+import type { Proyecto } from "../types";
+
+export default function Proyecto({ proyecto }: { proyecto: Proyecto }) {
   return (
     <article className="grid md:grid-cols-2 my-8 gap-8 border border-slate-200 rounded-lg items-center">
       <div>
         <img
           className="md:rounded-tl-lg md:rounded-bl-lg rounded-lg md:rounded-none object-contain aspect-video"
-          src="/tandatask.png"
+          src={`/${proyecto.imagen}`}
           alt="Imagen Proyecto"
         />
       </div>
       <div className="space-y-4 px-8">
-        <h3 className="text-lg md:text-xl font-semibold mt-8">TandaTask</h3>
-        <p>
-          Es una aplicación que permite gestionar proyectos, tareas, notas y
-          colaboradores al más puro estilo de trello.
-        </p>
+        <h3 className="text-lg md:text-xl font-semibold mt-8">
+          {proyecto.titulo}
+        </h3>
+        <p>{proyecto.descripcion}</p>
 
         <div className="my-8 flex gap-4 flex-wrap text-sm">
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Mongo</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Express</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">React</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Node</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">TypeScript</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Tailwind</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">ZOD</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">React Router DOM</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Axios</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">JWT</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">Mongoose</p>
-          <p className="bg-gray-100 py-2 px-4 rounded-lg">ReactQuery</p>
+          {proyecto.tags.map((tag, index) => (
+            <p className="bg-gray-100 py-2 px-4 rounded-lg" key={index}>
+              {tag}
+            </p>
+          ))}
         </div>
 
         <div className="flex gap-4 mb-8 text-sm">
           <a
             className="hover:text-emerald-500 transition-all"
-            href="https://github.com/arielhurtado388/TandaTaskBackend.git"
+            href={proyecto.github}
             target="_blank"
           >
             <svg
@@ -56,7 +50,7 @@ export default function CardProyecto() {
 
           <a
             className="hover:text-emerald-500 transition-all"
-            href="https://tandatask.netlify.app/"
+            href={proyecto.app}
             target="_blank"
           >
             <svg
