@@ -23,3 +23,10 @@ export type Proyecto = {
   github: string;
   app: string;
 };
+
+export type Habilidad = {
+  id: number;
+  titulo: string;
+  descripcion: string;
+  tags: string[];
+};
