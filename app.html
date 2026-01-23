@@ -1,0 +1,707 @@
+<!doctype html>
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Fundación Virgen del Huayco | Ayuda Social y Peregrinación</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#141414",
+              "foundation-blue": "#f0f4f8",
+              "foundation-gold": "#d4af37",
+              "background-light": "#fcfcfc",
+              "background-dark": "#191919",
+            },
+            fontFamily: {
+              display: ["Plus Jakarta Sans", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+      .glass-nav {
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #f1d592 100%);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-primary dark:text-white transition-colors duration-300"
+  >
+    <nav
+      class="fixed top-0 w-full z-50 border-b border-solid border-[#f2f2f2] dark:border-white/10 glass-nav dark:bg-background-dark/80"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="size-10 bg-primary text-white flex items-center justify-center rounded-lg"
+          >
+            <span class="material-symbols-outlined">church</span>
+          </div>
+          <div>
+            <h1 class="text-lg font-extrabold leading-none tracking-tight">
+              VIRGEN DEL HUAYCO
+            </h1>
+            <p
+              class="text-[10px] uppercase tracking-widest text-foundation-gold font-bold"
+            >
+              Fundación Social
+            </p>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+          <a
+            class="text-sm font-semibold hover:text-foundation-gold transition-colors"
+            href="#about"
+            >Historia</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-foundation-gold transition-colors"
+            href="#projects"
+            >Programas</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-foundation-gold transition-colors"
+            href="#impact"
+            >Impacto</a
+          >
+          <a
+            class="text-sm font-semibold hover:text-foundation-gold transition-colors"
+            href="#contact"
+            >Contacto</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            class="flex gap-2 items-center bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-opacity-90 transition-all"
+          >
+            <span class="material-symbols-outlined text-sm"
+              >volunteer_activism</span
+            >
+            <span>Donar Ahora</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="relative pt-20">
+      <div class="px-6 md:px-20 py-12 md:py-24">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 bg-foundation-blue dark:bg-white/5 rounded-full text-xs font-bold text-foundation-gold border border-foundation-gold/20"
+              >
+                <span class="material-symbols-outlined text-sm"
+                  >location_on</span
+                >
+                CHIMBO, BOLÍVAR, ECUADOR
+              </div>
+              <h1
+                class="text-5xl md:text-7xl font-black leading-[1.1] tracking-tight text-primary dark:text-white"
+              >
+                Compasión en el Corazón de
+                <span class="text-foundation-gold">Bolívar</span>
+              </h1>
+              <p
+                class="text-lg text-gray-600 dark:text-gray-400 max-w-xl leading-relaxed"
+              >
+                Apoyamos la asistencia social y la sagrada peregrinación en el
+                Santuario del Huayco. Transformamos su generosidad en esperanza
+                tangible para quienes más lo necesitan.
+              </p>
+              <div class="flex flex-wrap gap-4">
+                <button
+                  class="bg-primary text-white px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:scale-[1.02] transition-transform"
+                >
+                  <span class="material-symbols-outlined">payments</span>
+                  Apoyar con PayPal
+                </button>
+                <button
+                  class="border-2 border-primary/10 dark:border-white/10 px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
+                >
+                  Saber Más
+                </button>
+              </div>
+            </div>
+            <div class="relative">
+              <div
+                class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="El hermoso santuario de piedra del Huayco en Ecuador"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2dqcw3BJ_33T8X3MbDrtWn9NICUgROTN-9zhyRW6UC5VTpRZX7vee9D81d9XZqNTN2flE6_uxQclCpCVH32JDvRDzH_U4GtW8NsjJf1dslo-SfpLvm7nBB1NMCBOdp-lr0f8rJcsgk5TKFPMImaHUT6gX2wsqbeE81659d56XvTZ3jE1B85v_7XeRihhlyJe_Wyrk1O-0sM2SB4zK-l6YlzvvKOA3wXNZnqN6a763v45B3UxpW9gQXQExILf65OFwkPg4-oK5ooo4"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+                ></div>
+                <div class="absolute bottom-8 left-8 text-white">
+                  <p class="text-sm font-medium opacity-80 italic">
+                    "Donde la fe se encuentra con el servicio"
+                  </p>
+                  <p class="text-xl font-bold">Santuario del Huayco</p>
+                </div>
+              </div>
+              <div
+                class="absolute -bottom-6 -left-6 bg-white dark:bg-background-dark p-6 rounded-2xl shadow-xl border border-foundation-blue dark:border-white/5 flex items-center gap-4"
+              >
+                <div
+                  class="size-12 rounded-full bg-foundation-gold/20 flex items-center justify-center text-foundation-gold"
+                >
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <p
+                    class="text-xs font-bold text-gray-400 uppercase tracking-widest"
+                  >
+                    Fundada
+                  </p>
+                  <p class="text-lg font-black">Desde 1985</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 bg-foundation-blue/50 dark:bg-white/5" id="about">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2
+            class="text-foundation-gold font-bold uppercase tracking-[0.2em] text-sm"
+          >
+            Nuestro Legado
+          </h2>
+          <h3 class="text-4xl font-black text-primary dark:text-white">
+            Una Historia de Devoción y Servicio
+          </h3>
+          <p class="text-gray-600 dark:text-gray-400 text-lg">
+            Fundada en el corazón de Bolívar, Ecuador, la Fundación Virgen del
+            Huayco es un pilar de esperanza, brindando ayuda social y
+            preservando el patrimonio espiritual de nuestro santuario.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm"
+          >
+            <span
+              class="material-symbols-outlined text-foundation-gold text-4xl mb-4"
+              >history_edu</span
+            >
+            <h4 class="text-xl font-bold mb-3">Nuestra Misión</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Impulsar a las comunidades vulnerables de Chimbo mediante
+              seguridad alimentaria, iniciativas de salud y guía espiritual.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm"
+          >
+            <span
+              class="material-symbols-outlined text-foundation-gold text-4xl mb-4"
+              >church</span
+            >
+            <h4 class="text-xl font-bold mb-3">Apoyo al Peregrino</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Mantenemos el Santuario como un lugar de reflexión y oración de
+              clase mundial para miles de visitantes anuales.
+            </p>
+          </div>
+          <div
+            class="bg-white dark:bg-background-dark p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm"
+          >
+            <span
+              class="material-symbols-outlined text-foundation-gold text-4xl mb-4"
+              >groups</span
+            >
+            <h4 class="text-xl font-bold mb-3">Comunidad Primero</h4>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              Empoderamos a las familias de Bolívar mediante programas
+              educativos y proyectos de desarrollo social sostenible.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24" id="projects">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-12">
+          <div class="space-y-4">
+            <h2
+              class="text-foundation-gold font-bold uppercase tracking-[0.2em] text-sm text-left"
+            >
+              Cómo Ayudamos
+            </h2>
+            <h3 class="text-4xl font-black text-primary dark:text-white">
+              Programas Sociales Activos
+            </h3>
+          </div>
+          <button
+            class="text-primary dark:text-white font-bold border-b-2 border-foundation-gold pb-1 hover:text-foundation-gold transition-colors"
+          >
+            Ver Todos los Proyectos
+          </button>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="group rounded-3xl overflow-hidden bg-white dark:bg-background-dark border border-gray-100 dark:border-white/5 transition-all hover:shadow-2xl"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                data-alt="Niños recibiendo apoyo nutricional"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJNTzRXIc2Z9tJaWbWDMgunIU8uhDFVDZfLleTdJovUQpvjwnfrajYUr9VM3--t7ohTuL-D7XGoTJLeci-znH4vUkjLO9cKTvqkINKX18fq-2WNgemKN0SQqQujUtdzQShqPFlVFZ2FJ0JPut1x630tISIdSMAJfQD_mKW4itrO4AY4onwvkCVPfWYMJ-SVnItVHwxNX1voj7Ie3FB5lHEm3BHXjecP2DBYTpRRU59Hd4XUtJ5fA_0ROUp0cGsxM6siPS5PHWjXAWO"
+              />
+            </div>
+            <div class="p-8 space-y-4">
+              <div class="flex justify-between items-center">
+                <span
+                  class="px-3 py-1 bg-foundation-blue text-xs font-bold rounded-full text-blue-600"
+                  >Nutrición</span
+                >
+                <span class="text-xs text-gray-400">85% de la Meta</span>
+              </div>
+              <h4 class="text-2xl font-bold">Comedor Comunitario</h4>
+              <p class="text-gray-500 text-sm">
+                Brindamos más de 200 almuerzos diarios a familias de escasos
+                recursos y adultos mayores en Chimbo.
+              </p>
+              <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-foundation-gold h-full w-[85%]"></div>
+              </div>
+              <button
+                class="w-full py-3 bg-primary text-white rounded-xl font-bold mt-4 hover:bg-foundation-gold transition-colors"
+              >
+                Apoyar Proyecto
+              </button>
+            </div>
+          </div>
+          <div
+            class="group rounded-3xl overflow-hidden bg-white dark:bg-background-dark border border-gray-100 dark:border-white/5 transition-all hover:shadow-2xl"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                data-alt="Adultos mayores en una sala común"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrQ8Hd4gwT-MLXEHkfzBWhMbtSrA07jJY0pw2bJMZL4EdWdEdbYBVArL3PBx867atP46we1K-AePcCnU4RRP77hINYp9olW_GPZGp0HPxpnF7QVu_mhKe5rQNUYc0fH2nXEAsQG8BGQVDtdRWAsGwzHdG8DfYb7yTedkls7DPWjlRsMzUEseD380c03FuXrgzxDErmLlj3Bj1Ru7wWtELRGRVkjCnqMF1JdpfFZIeYJ08on9Y3nGrg7lpjo4XcHxQP7D35CyPZ8uV-"
+              />
+            </div>
+            <div class="p-8 space-y-4">
+              <div class="flex justify-between items-center">
+                <span
+                  class="px-3 py-1 bg-foundation-blue text-xs font-bold rounded-full text-green-600"
+                  >Adulto Mayor</span
+                >
+                <span class="text-xs text-gray-400">60% de la Meta</span>
+              </div>
+              <h4 class="text-2xl font-bold">Centro de Sabiduría</h4>
+              <p class="text-gray-500 text-sm">
+                Un refugio seguro para nuestros abuelitos que ofrece chequeos
+                médicos, actividades sociales y compañía.
+              </p>
+              <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-foundation-gold h-full w-[60%]"></div>
+              </div>
+              <button
+                class="w-full py-3 bg-primary text-white rounded-xl font-bold mt-4 hover:bg-foundation-gold transition-colors"
+              >
+                Apoyar Proyecto
+              </button>
+            </div>
+          </div>
+          <div
+            class="group rounded-3xl overflow-hidden bg-white dark:bg-background-dark border border-gray-100 dark:border-white/5 transition-all hover:shadow-2xl"
+          >
+            <div class="h-64 overflow-hidden">
+              <img
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                data-alt="Peregrinos caminando hacia la iglesia"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_qPuNnmrXq3i9In7k1j1UD8fur-yX-el46OvMn7HIfOL7ePxP8ZdamlVzbJswDOQ6J2rdJMzelZD78E-GBKSUYdZcNBm09NDl9Or7S7Y3LUPIyC5gNMmhpEIsbjpT85m1HpnaTtnH20P14I-qRMLWwJ4JA37Xaa3FT4w4nF5Of0A19QraW7KGCMqP8Tku7pdlUyhcrz377z87a-1IOdyzSmfLqzG5-5d_GHHUgXcw04KWd4LlxKy5cGtUhLxOw7Oq6oXkn9wodCLk"
+              />
+            </div>
+            <div class="p-8 space-y-4">
+              <div class="flex justify-between items-center">
+                <span
+                  class="px-3 py-1 bg-foundation-blue text-xs font-bold rounded-full text-amber-600"
+                  >Peregrinación</span
+                >
+                <span class="text-xs text-gray-400">Continuo</span>
+              </div>
+              <h4 class="text-2xl font-bold">Cuidado del Santuario</h4>
+              <p class="text-gray-500 text-sm">
+                Mantenimiento de los predios sagrados y apoyo a peregrinos con
+                refugio y necesidades básicas.
+              </p>
+              <div class="w-full bg-gray-100 h-2 rounded-full overflow-hidden">
+                <div class="bg-foundation-gold h-full w-[100%]"></div>
+              </div>
+              <button
+                class="w-full py-3 bg-primary text-white rounded-xl font-bold mt-4 hover:bg-foundation-gold transition-colors"
+              >
+                Apoyar Proyecto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-24 bg-primary text-white overflow-hidden relative"
+      id="impact"
+    >
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none"
+      >
+        <span class="material-symbols-outlined text-[400px]">auto_awesome</span>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-20 items-center">
+          <div class="space-y-8">
+            <h2
+              class="text-foundation-gold font-bold uppercase tracking-[0.2em] text-sm"
+            >
+              Transparencia
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-black">
+              Tu impacto en números.
+            </h3>
+            <p class="text-gray-400 text-lg leading-relaxed">
+              Creemos en la transparencia absoluta. Cada centavo donado va
+              directamente a nuestros programas sociales y al mantenimiento del
+              Santuario. Juntos, construimos un Chimbo más fuerte.
+            </p>
+            <div class="grid grid-cols-2 gap-8">
+              <div>
+                <p class="text-5xl font-black text-foundation-gold">12k+</p>
+                <p class="text-gray-400 mt-2">Comidas servidas mensualmente</p>
+              </div>
+              <div>
+                <p class="text-5xl font-black text-foundation-gold">450</p>
+                <p class="text-gray-400 mt-2">Familias apoyadas</p>
+              </div>
+              <div>
+                <p class="text-5xl font-black text-foundation-gold">30</p>
+                <p class="text-gray-400 mt-2">Peregrinos diarios asistidos</p>
+              </div>
+              <div>
+                <p class="text-5xl font-black text-foundation-gold">100%</p>
+                <p class="text-gray-400 mt-2">Puntuación de Transparencia</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white/5 p-1 rounded-3xl backdrop-blur-sm">
+            <div
+              class="bg-white dark:bg-background-dark p-10 rounded-2xl text-primary dark:text-white"
+            >
+              <h4 class="text-2xl font-bold mb-6">Reportes Recientes</h4>
+              <div class="space-y-4">
+                <div
+                  class="flex items-center justify-between p-4 rounded-xl border border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors cursor-pointer"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-foundation-gold"
+                      >description</span
+                    >
+                    <span class="font-semibold">Impacto Social Anual 2023</span>
+                  </div>
+                  <span class="material-symbols-outlined text-gray-400"
+                    >download</span
+                  >
+                </div>
+                <div
+                  class="flex items-center justify-between p-4 rounded-xl border border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors cursor-pointer"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-foundation-gold"
+                      >description</span
+                    >
+                    <span class="font-semibold"
+                      >Auditoría Financiera Q3 2024</span
+                    >
+                  </div>
+                  <span class="material-symbols-outlined text-gray-400"
+                    >download</span
+                  >
+                </div>
+                <div
+                  class="flex items-center justify-between p-4 rounded-xl border border-gray-100 dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors cursor-pointer"
+                >
+                  <div class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-foundation-gold"
+                      >description</span
+                    >
+                    <span class="font-semibold"
+                      >Hoja de Ruta "Centro Sabiduría"</span
+                    >
+                  </div>
+                  <span class="material-symbols-outlined text-gray-400"
+                    >download</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24" id="contact">
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="bg-foundation-blue/30 dark:bg-white/5 rounded-[3rem] overflow-hidden grid lg:grid-cols-2"
+        >
+          <div class="p-12 lg:p-20 space-y-10">
+            <div class="space-y-4">
+              <h2
+                class="text-foundation-gold font-bold uppercase tracking-[0.2em] text-sm"
+              >
+                Contáctanos
+              </h2>
+              <h3 class="text-4xl font-black text-primary dark:text-white">
+                Nos encantaría escucharte.
+              </h3>
+            </div>
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                  <label class="text-xs font-bold uppercase text-gray-400"
+                    >Nombre Completo</label
+                  >
+                  <input
+                    class="w-full bg-white dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-foundation-gold"
+                    placeholder="Juan Pérez"
+                    type="text"
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-xs font-bold uppercase text-gray-400"
+                    >Correo Electrónico</label
+                  >
+                  <input
+                    class="w-full bg-white dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-foundation-gold"
+                    placeholder="juan@ejemplo.com"
+                    type="email"
+                  />
+                </div>
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold uppercase text-gray-400"
+                  >Mensaje</label
+                >
+                <textarea
+                  class="w-full bg-white dark:bg-background-dark border-none rounded-xl p-4 focus:ring-2 focus:ring-foundation-gold"
+                  placeholder="¿Cómo podemos ayudarte?"
+                  rows="4"
+                ></textarea>
+              </div>
+              <button
+                class="w-full py-4 bg-primary text-white rounded-xl font-bold hover:bg-foundation-gold transition-colors"
+              >
+                Enviar Mensaje
+              </button>
+            </form>
+            <div
+              class="pt-10 border-t border-gray-200 dark:border-white/10 grid grid-cols-2 gap-8"
+            >
+              <div>
+                <p class="font-bold mb-2">Ubicación</p>
+                <p class="text-sm text-gray-500">
+                  San José de Chimbo,<br />Bolívar, Ecuador
+                </p>
+              </div>
+              <div>
+                <p class="font-bold mb-2">Contacto</p>
+                <p class="text-sm text-gray-500">
+                  info@huayco.org.ec<br />+593 999 888 777
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="relative h-[400px] lg:h-auto">
+            <img
+              class="w-full h-full object-cover"
+              data-alt="Mapa de la región de San José de Chimbo en Ecuador"
+              data-location="San Jose de Chimbo, Ecuador"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF_5pjyxWK_onJ8-TOYN4TMEfSuJGoI9W-fb4bYKHNhlv2BmsH9GjAjWEiV_jwbRxGeXoMZx5tELVY5ZORFOjbj7u06nnHtQx97AymF5PBoc4VSCidtMKZ8B87Ug-RuNw98S3D3d9JrMJxcQaMbmnXZLi4E_wP8xm9FdHKpActvVA7XYAh2IWOxkEB-nncJWXbO4up2X1M5DXYdWlnEh9RM8qPqk0IyaZDPdEGfdnWDbKy6f4GLILlaQSOYLyVl7TP4rNUeUOB-6fD"
+            />
+            <div class="absolute inset-0 bg-primary/20"></div>
+            <div
+              class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            >
+              <div
+                class="size-16 gold-gradient rounded-full flex items-center justify-center animate-bounce shadow-2xl"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >location_on</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-background-light dark:bg-background-dark pt-20 pb-10 border-t border-gray-100 dark:border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-3 gap-12 mb-16">
+          <div class="col-span-1 space-y-6">
+            <div class="flex items-center gap-3">
+              <div
+                class="size-8 bg-primary text-white flex items-center justify-center rounded-lg"
+              >
+                <span class="material-symbols-outlined text-sm">church</span>
+              </div>
+              <h1 class="text-md font-extrabold tracking-tight">
+                VIRGEN DEL HUAYCO
+              </h1>
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Una organización sin fines de lucro dedicada a la justicia social
+              y preservación religiosa en el corazón de los Andes ecuatorianos.
+            </p>
+            <div class="flex gap-4">
+              <a
+                class="size-10 bg-gray-100 dark:bg-white/5 rounded-full flex items-center justify-center hover:bg-foundation-gold hover:text-white transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xl"
+                  >social_leaderboard</span
+                >
+              </a>
+              <a
+                class="size-10 bg-gray-100 dark:bg-white/5 rounded-full flex items-center justify-center hover:bg-foundation-gold hover:text-white transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xl"
+                  >photo_camera</span
+                >
+              </a>
+              <a
+                class="size-10 bg-gray-100 dark:bg-white/5 rounded-full flex items-center justify-center hover:bg-foundation-gold hover:text-white transition-colors"
+                href="#"
+              >
+                <span class="material-symbols-outlined text-xl"
+                  >video_library</span
+                >
+              </a>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <h5 class="font-bold">Navegación</h5>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li>
+                <a
+                  class="hover:text-foundation-gold transition-colors"
+                  href="#about"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-foundation-gold transition-colors"
+                  href="#projects"
+                  >Proyectos Actuales</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-foundation-gold transition-colors" href="#"
+                  >Opciones de Donación</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-foundation-gold transition-colors"
+                  href="#impact"
+                  >Reporte de Impacto</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h5 class="font-bold">Información de Contacto</h5>
+            <ul class="space-y-4 text-sm text-gray-500">
+              <li class="flex gap-2">
+                <span
+                  class="material-symbols-outlined text-foundation-gold text-sm"
+                  >location_on</span
+                >
+                Calle Principal, San José de Chimbo
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="material-symbols-outlined text-foundation-gold text-sm"
+                  >call</span
+                >
+                +593 3 297 8122
+              </li>
+              <li class="flex gap-2">
+                <span
+                  class="material-symbols-outlined text-foundation-gold text-sm"
+                  >mail</span
+                >
+                contacto@huayco.org
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-8 border-t border-gray-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400 font-medium"
+        >
+          <p>
+            © 2024 Fundación Virgen del Huayco. Todos los derechos reservados.
+          </p>
+          <div class="flex gap-8">
+            <a class="hover:underline" href="#">Política de Privacidad</a>
+            <a class="hover:underline" href="#">Términos de Servicio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="fixed bottom-8 right-8 size-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50"
+      href="https://wa.me/593999888777"
+      target="_blank"
+    >
+      <svg
+        fill="currentColor"
+        height="28"
+        viewBox="0 0 16 16"
+        width="28"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93a7.898 7.898 0 0 0-2.327-5.607zM7.994 14.52a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+        ></path>
+      </svg>
+    </a>
+  </body>
+</html>
