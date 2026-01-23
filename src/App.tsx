@@ -11,17 +11,17 @@ import { habilidades } from "./data/habilidades";
 function App() {
   return (
     <>
-      <div className="max-w-[95%] md:max-w-7xl mx-auto">
+      <div className="max-w-[95%] lg:max-w-7xl mx-auto">
         <Header />
 
-        <section className="mt-8" id="acerca">
-          <h2 className="text-2xl md:text-3xl font-bold text-emerald-800">
+        <section className="mt-8 space-y-6 lg:space-y-0" id="acerca">
+          <h2 className="text-2xl lg:text-3xl font-bold text-emerald-800">
             Acerca de mí
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-4 items-center">
-            <div className="space-y-4 md:col-span-2 text-sm md:text-base">
-              <p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
+            <div className="space-y-4 lg:col-span-2 text-sm lg:text-base">
+              <p className=" leading-[1.5]">
                 Ingeniero de Software Full Stack con experiencia en el
                 desarrollo y mantenimiento de aplicaciones web en entornos de
                 producción, en organizaciones institucionales y de carácter
@@ -33,7 +33,7 @@ function App() {
               </p>
             </div>
 
-            <div className="space-y-4 md:col-span-1">
+            <div className="space-y-4 lg:col-span-1">
               {informacionAcerca.map((acerca) => (
                 <Acerca key={acerca.id} acerca={acerca} />
               ))}
@@ -42,29 +42,29 @@ function App() {
         </section>
 
         <main className="mt-8" id="experiencia">
-          <h2 className="text-2xl md:text-3xl font-bold">Experiencia</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold">Experiencia</h2>
           {experiencias.map((experiencia) => (
             <Experiencia key={experiencia.id} experiencia={experiencia} />
           ))}
         </main>
 
         <section className="mt-8" id="proyectos">
-          <h2 className="text-2xl md:text-3xl font-bold">Proyectos</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold">Proyectos</h2>
           {proyectos.map((proyecto) => (
             <Proyecto key={proyecto.id} proyecto={proyecto} />
           ))}
         </section>
 
         <section className="mt-8" id="habilidades">
-          <h2 className="text-2xl md:text-3xl font-bold">Habilidades</h2>
-          <div className="grid md:grid-cols-2 gap-4 my-8">
+          <h2 className="text-2xl lg:text-3xl font-bold">Habilidades</h2>
+          <div className="grid lg:grid-cols-2 gap-4 my-8">
             {habilidades.map((habilidad) => (
               <Habilidad key={habilidad.id} habilidad={habilidad} />
             ))}
           </div>
         </section>
 
-        <footer className="mb-8 text-center text-xs md:text-sm text-slate-500">
+        <footer className="mb-8 text-center text-xs lg:text-sm text-slate-500">
           <p>
             &copy; {new Date().getFullYear()} Ariel Hurtado. Todos los derechos
             reservados

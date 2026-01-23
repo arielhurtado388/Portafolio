@@ -3,16 +3,16 @@ import type { Proyecto } from "../types";
 export default function Proyecto({ proyecto }: { proyecto: Proyecto }) {
   console.log(proyecto.id % 2 === 0);
   return (
-    <article className="grid md:grid-cols-2 my-8 gap-8 border border-slate-200 rounded-lg items-center">
-      <div className={`${proyecto.id % 2 === 0 ? "md:order-2" : ""}`}>
+    <article className="grid lg:grid-cols-2 my-8 gap-4 lg:gap-8 border border-slate-200 rounded-lg items-center">
+      <div className={`${proyecto.id % 2 === 0 ? "lg:order-2" : ""}`}>
         <img
-          className="md:rounded-tl-lg md:rounded-bl-lg rounded-lg md:rounded-none object-contain aspect-video"
+          className="lg:rounded-tl-lg lg:rounded-bl-lg rounded-lg lg:rounded-none object-contain aspect-video"
           src={`/${proyecto.imagen}`}
           alt="Imagen Proyecto"
         />
       </div>
-      <div className="space-y-4 px-8">
-        <h3 className="text-lg md:text-xl font-semibold mt-8">
+      <div className="space-y-4 px-4 lg:px-8">
+        <h3 className="text-lg lg:text-xl font-semibold mt-4 lg:mt-8">
           {proyecto.titulo}
         </h3>
         <p>{proyecto.descripcion}</p>

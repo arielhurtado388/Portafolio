@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header>
-      <section className="flex flex-col md:flex-row justify-between p-8 items-center gap-4">
+      <section className="flex flex-col md:flex-row justify-between p-8 items-center gap-8">
         <a href="/">
           <img
             className="w-20 h-20 md:w-24 md:h-24"
@@ -10,7 +10,7 @@ export default function Header() {
           />
         </a>
         <nav>
-          <ul className="flex flex-col md:flex-row gap-4 text-sm md:text-base font-medium">
+          <ul className="flex flex-wrap justify-center md:flex-row gap-4 text-sm md:text-base font-medium">
             <li>
               <a href="#acerca">Acerca de mí</a>
             </li>

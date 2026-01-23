@@ -7,9 +7,9 @@ export default function Experiencia({
 }) {
   return (
     <div className="relative border border-slate-200 rounded-lg mt-8 p-4 ml-6 before:content-[''] before:absolute before:-left-6 before:top-[2.5rem] before:w-4 before:h-4 before:bg-emerald-500 before:rounded-full before:ring-4 before:ring-white before:z-10 after:content-[''] after:absolute after:-left-[19px] after:top-0 after:h-full after:w-1 after:bg-gray-200 hover:border-emerald-800 transition-all">
-      <header className="flex flex-col md:flex-row justify-between gap-4 m-4 md:items-center">
+      <header className="flex flex-col lg:flex-row justify-between gap-4 m-4 lg:items-center">
         <div>
-          <h3 className="text-lg md:text-xl font-semibold">
+          <h3 className="text-lg lg:text-xl font-semibold">
             {experiencia.cargo}
           </h3>
 
@@ -57,12 +57,12 @@ export default function Experiencia({
             </svg>
             {experiencia.fecha}
           </h3>
-          <p className="text-sm md:text-right text-slate-500">
+          <p className="text-sm lg:text-right text-slate-500">
             {experiencia.modalidad}
           </p>
         </div>
       </header>
-      <ul className="list-disc marker:text-emerald-500 px-8 text-sm md:text-base">
+      <ul className="list-disc marker:text-emerald-500 px-8 text-sm lg:text-base">
         {experiencia.listado.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
