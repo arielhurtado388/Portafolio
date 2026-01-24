@@ -30,9 +30,9 @@ export default function Header() {
 
       <section className="flex flex-col md:flex-row items-center">
         <div className="space-y-4 flex-1">
-          <p className="p-2 bg-emerald-50 inline-block text-emerald-800 text-sm font-bold rounded-lg">
+          {/* <p className="p-2 bg-emerald-50 inline-block text-emerald-800 text-sm font-bold rounded-lg">
             Disponible para trabajar
-          </p>
+          </p> */}
           <p className="text-lg md:text-xl">
             Hola, soy
             <span className="text-emerald-800 font-bold"> Ariel Hurtado</span>
