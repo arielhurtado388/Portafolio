@@ -14,7 +14,8 @@ export const habilidades: Habilidad[] = [
       "Responsive Web Design",
       "JavaScript",
       "TypeScript",
-      "React",
+      "React.js",
+      "Next.js",
     ],
   },
 
@@ -23,7 +24,20 @@ export const habilidades: Habilidad[] = [
     titulo: "Backend",
     descripcion:
       "Desarrollando APIs robustas y servicios del lado del servidor escalables.",
-    tags: ["Node.js", "Express", "PHP", "Laravel", "REST APIs", "JWT", "n8n"],
+    tags: [
+      "Node.js",
+      "NestJS",
+      "Express",
+      "PHP",
+      "Laravel",
+      "C# / .NET",
+      "REST APIs",
+      "SOAP",
+      "WebSockets",
+      "JWT",
+      "MCP",
+      "n8n",
+    ],
   },
 
   {
@@ -31,7 +45,16 @@ export const habilidades: Habilidad[] = [
     titulo: "Bases de Datos y ORMs",
     descripcion:
       "Diseñando y gestionando bases de datos relacionales y NoSQL eficientes.",
-    tags: ["MySQL", "PostgreSQL", "MongoDB", "Prisma", "Sequelize", "Mongoose"],
+    tags: [
+      "MySQL",
+      "PostgreSQL",
+      "PostGIS",
+      "MongoDB",
+      "Prisma",
+      "TypeORM",
+      "Sequelize",
+      "Mongoose",
+    ],
   },
 
   {
@@ -39,6 +62,16 @@ export const habilidades: Habilidad[] = [
     titulo: "DevOps y Herramientas",
     descripcion:
       "Automatizando despliegues y optimizando flujos de trabajo de desarrollo.",
-    tags: ["Docker", "Linux", "Git", "GitHub", "GitHub Actions", "Webhooks"],
+    tags: [
+      "Docker",
+      "Linux",
+      "Git",
+      "GitHub",
+      "GitHub Actions",
+      "Webhooks",
+      "Swagger",
+      "Dokploy",
+      "PM2",
+    ],
   },
 ];

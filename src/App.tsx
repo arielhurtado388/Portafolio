@@ -22,14 +22,15 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center">
             <div className="space-y-4 lg:col-span-2 text-sm lg:text-base">
               <p className=" leading-[1.5]">
-                Ingeniero de Software Full Stack con experiencia en el
-                desarrollo y mantenimiento de aplicaciones web en entornos de
-                producción, en organizaciones institucionales y de carácter
-                privado. He trabajado en la implementación de APIs,
-                autenticación y automatización de procesos, aportando nuevas
-                funcionalidades y la mejora continua de sistemas existentes.
-                Construyo soluciones con una base técnica sólida, pensada para
-                facilitar su mantenimiento y evolución.
+                Ingeniero de Software Full Stack con experiencia construyendo y
+                llevando a producción sistemas para instituciones públicas y
+                empresas privadas. He desarrollado plataformas de pago de
+                servicios municipales, telemetría de dispositivos IoT y
+                aplicaciones web de gestión, trabajando de extremo a extremo:
+                modelado de datos, APIs, autenticación, integraciones con
+                servicios externos y hardware, y despliegue. Construyo
+                soluciones con una base técnica sólida, pensada para facilitar
+                su mantenimiento y evolución.
               </p>
             </div>
 

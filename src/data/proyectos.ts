@@ -27,27 +27,6 @@ export const proyectos: Proyecto[] = [
 
   {
     id: 2,
-    imagen: "questify.webp",
-    titulo: "Questify",
-    descripcion:
-      "Es una aplicación que gestiona la información de las actividades turísticas de la parroquia de San Andrés en Riobamba - Ecuador.",
-    tags: [
-      "PHP",
-      "MySQL",
-      "SASS",
-      "JS",
-      "Creación propia del Router",
-      "ORM Básico",
-      "Mini Framework usando Active Record",
-      "POO",
-      "PDO",
-    ],
-    github: "https://github.com/arielhurtado388/Questify",
-    app: "https://questify.domcloud.dev",
-  },
-
-  {
-    id: 3,
     imagen: "lukin.webp",
     titulo: "Lukin",
     descripcion:
@@ -55,16 +34,5 @@ export const proyectos: Proyecto[] = [
     tags: ["Next.js", "TypeScript", "Tailwind", "Express", "JWT", "PostgreSQL"],
     github: "https://github.com/arielhurtado388/LukinBackend",
     app: "https://lukin.netlify.app",
-  },
-
-  {
-    id: 4,
-    imagen: "bienesraices.webp",
-    titulo: "BienesRaíces",
-    descripcion:
-      "Es una aplicación que permite publicar y administrar propiedades en venta. Permite ver cada propiedad y enviar un mensaje al vendedor, filtrar propiedades por su categoría y precio o realizar una búsqueda generalizada. Cuenta con autenticación, panel de administración de propiedades, paginación, etc",
-    tags: ["Node.js", "Express", "MySQL", "PUG", "JWT", "Leaflet", "Tailwind"],
-    github: "https://github.com/arielhurtado388/BienesRaices",
-    app: "https://bienesraices.domcloud.dev",
   },
 ];
