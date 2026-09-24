@@ -22,7 +22,6 @@ export const proyectos: Proyecto[] = [
       "ReactQuery",
     ],
     github: "https://github.com/arielhurtado388/TandaTaskBackend.git",
-    app: "https://tandatask.netlify.app",
   },
 
   {
@@ -33,6 +32,5 @@ export const proyectos: Proyecto[] = [
       "Es una aplicación que permite agregar presupuestos y sus respectivos gastos para tener un control de nuestras finanzas de manera fácil, rápida y minimalista.",
     tags: ["Next.js", "TypeScript", "Tailwind", "Express", "JWT", "PostgreSQL"],
     github: "https://github.com/arielhurtado388/LukinBackend",
-    app: "https://lukin.netlify.app",
   },
 ];

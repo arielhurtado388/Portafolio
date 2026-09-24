@@ -21,7 +21,6 @@ export type Proyecto = {
   descripcion: string;
   tags: string[];
   github: string;
-  app: string;
 };
 
 export type Habilidad = {
